@@ -9,7 +9,7 @@ export function usermiddlware (req: Request, res: Response, next: NextFunction){
 
     if(decoded) {
         //@ts-ignore
-        req.userId = decoded.id;
+        req.userId = decoded.id; // Set the req.id for user route to get req.userId
         next()
     }else {
         res.status(403).json({
