@@ -74,7 +74,7 @@ userRouter.get('/content', usermiddlware, async (req, res) => {
     const userId = req.userId; // srting
     const findContent = await contentModel.find({
         userId: userId
-    }).populate("userId", "username password");
+    }).populate("userId", "username password"); // get reference data also
 
     res.json({
         content: findContent
