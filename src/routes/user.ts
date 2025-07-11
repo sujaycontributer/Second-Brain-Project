@@ -71,7 +71,7 @@ userRouter.post('/content', usermiddlware, async (req, res) => {
 
 userRouter.get('/content', usermiddlware, async (req, res) => {
     //@ts-ignore
-    const userId = req.userId;
+    const userId = req.userId; // srting
     const findContent = await contentModel.find({
         userId: userId
     }).populate("userId", "username password");
