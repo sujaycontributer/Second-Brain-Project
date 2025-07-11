@@ -60,7 +60,7 @@ userRouter.post('/content', usermiddlware, async (req, res) => {
     title,
     link,
     //@ts-ignore
-    userId: req.userId,
+    userId: req.userId as srting,
     tags: []
    });
    res.json({
