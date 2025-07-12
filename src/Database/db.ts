@@ -10,8 +10,8 @@ export const userModel =  model("User", userSchema );
 const contentSchema = new Schema ({
     title: String,
     link: String,
-    tags: [{type: mongoose.Types.ObjectId, ref: "Tag"}], // reference the model tag 
-    userId: {type: mongoose.Types.ObjectId, ref: "User"}
+    tags: [{type: mongoose.Types.ObjectId, ref: "Tag"}], // reference to the model tag 
+    userId: {type: mongoose.Types.ObjectId, ref: "User"}  // refernce to the User model
 });
 
 export const contentModel = model("Content", contentSchema);
