@@ -15,4 +15,4 @@ const contentSchema = new Schema ({
     userId: {type: mongoose.Types.ObjectId, ref: "User"}  // refernce to the User model
 });
 
-export const contentModel = model("Content", contentSchema);
+export const contentModel = model("Content", contentSchema); // contentModel of contentSchema
