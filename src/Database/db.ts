@@ -6,7 +6,7 @@ const userSchema = new Schema ({
     password: {type: String, required: [true, 'Password is required']}
 })
 
-export const userModel =  model("User", userSchema );
+export const userModel =  model("User", userSchema ); // userModel of userSchema
 
 const contentSchema = new Schema ({
     title: String,
